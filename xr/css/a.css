@@ -1,0 +1,379 @@
+/* 头部最大的容器（盒子box） */
+.top{
+    width: 100%;
+    height: 96px;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    border-bottom: 1px solid #bcbcbc;
+    top: 0;
+}
+
+/* 头部居中盒子 */
+.top .top_box{
+    width: 1170px;
+    height: 91px;
+    margin: 0 auto;
+    padding: 5px 5px 0 5px;
+}
+/* 头部logo样式 */
+.top .logo{
+    width: 154px;
+    margin-top: 10px;
+}
+
+/* 头部北京定位样式 */
+.top .seat{
+    background: url(../img/seat.png) no-repeat 0 0; 
+    float: left;
+    line-height: 12px;
+    margin-top: -20px;
+    margin-left: 175px;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+/* 头部导航栏样式 */
+.top .navigation{
+    float: left;
+    width: 750px;
+    height: 17px;
+    margin-top: -35px;
+    margin-left: 200px;
+}
+.top .navigation ul li{
+    float: left;
+    list-style: none;
+   
+    height: 17px;
+    border-right: 1px solid #333;
+    line-height: 14px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.top .navigation ul li a{
+    color: #333;
+    text-decoration: none;
+}
+.top .navigation ul .li2{
+    border-right: 0px;
+}
+.top .navigation ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/* 头部二维码样式 */
+.top .top_right{
+    display: block;
+    width: 200px;
+    /* height: 200px; */
+    position: relative;
+    margin-left: 850px;
+    margin-top: -84px;
+}
+.top .top_right p{
+    margin-top: -40px;
+    margin-left: 20px;
+    color: #bcbcbc;
+}
+.top .top_right img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.top .top_right img:hover{
+    width: 300px;
+    height: 300px;
+}
+
+/* 头部登录注册按钮样式 */
+.top .login{
+    width: 80px;
+    margin-left: 1070px;
+    margin-top: -60px;
+}
+
+.top .login a{
+    font-size: 13px;
+    color: red;
+    text-decoration: none;
+}
+.top .login a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+/* 头部购物车样式 */
+.top .car{
+    width: 50px;
+    height: 50px;
+    margin-left: 1074px;
+    margin-top: 2px;
+}
+.top .car a{
+    text-decoration: none;
+}
+.top .car a:hover{
+    text-decoration:underline;
+    color: red;
+}
+.top .car span{
+    display: block;
+    margin-top: -31px;
+    margin-left: 32px;
+    font-size: 12px;
+    color: red;
+}
+
+/* 头部导航栏固定多余部分填充样式 */
+.top_blow {
+    height: 88px;
+}
+
+
+.center_box{
+    width: 100%;
+}
+
+/* 第二大块图片部分样式 */
+.center{
+    width: 1170px;
+    margin: 0 auto;
+   
+}
+/* .center p{
+    font-size: 20px;
+    text-align: center;
+}
+.center p:before{
+    position: absolute;
+    top: 50%; 
+    background: #ddd; 
+    content: "";
+    height: 10px;
+    width: 5px;
+    background-color: red   ;
+} */
+.order {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.order .line {
+    display: inline-block;
+    width: 250px;
+    border-top: 2px solid #ccc ;
+}
+.order .txt {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    vertical-align: -4px;
+}
+.center img{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.center .one{
+    width: 1170px;
+    height: 500px;
+}
+.center .one:hover{
+    opacity: 1;
+}
+
+.center .two{
+    width: 510px;
+    height: 545px;
+    float: left;
+}
+.center .two:hover{
+    opacity: 1;
+}
+.center .three{
+    width: 650px;
+    height: 230px;
+    margin-left: 10px;
+    float: left;
+}
+.center .three:hover{
+    opacity: 1;
+}
+.center .four{
+    width: 322px;
+    height: 310px;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+}
+.center .four:hover{
+    opacity: 1;
+}
+.center .five{
+    width: 322px;
+    height: 310px;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+.center .five:hover{
+    opacity: 1;
+}
+
+
+.culture{
+    width: 100%;
+    background-color: #f7f1eb;
+}
+.culture .box{
+    margin: 0 auto;
+    width: 1170px;
+}
+.culture .box .about_text{
+    text-align: center;
+    font-size: smaller;
+    color: #868686;
+    padding-bottom: 20px;
+}
+.culture .box .about_text p{
+    margin-top: -7px;
+}
+
+
+
+.about{
+    width: 100%;
+    border-bottom: 1px solid #bcbcbc;
+    margin-top: -4px;
+}
+.about .box{
+    width: 1170px;
+    height: 510px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.about .box .word{
+    margin-left: 30px;
+    color: #868686;
+    line-height: 25px;
+}
+.about .box img{
+    display: block;
+    margin: 0 auto;
+}
+
+/* 第三大块帮助中心部分样式 */
+/* 大盒子样式 */
+.last{
+    width: 100%;
+    background-color: #f7f1eb;
+    border-bottom: 1px solid #bcbcbc;
+    margin-top: -4px;
+}
+/* 居中盒子样式 */
+.end{
+    width: 1170px;
+    height: 206px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+/* 居中盒子4个ulli样式 */
+.end .ul_li{
+    width: 220px;
+    height: 120px;
+    float: left;
+    border-right: 1px solid #bcbcbc;
+    list-style: none;
+}
+.end .ul{
+    margin-left: -55px;
+}
+.end .ul_li .ul_ul{
+    margin-left: 28px;
+}
+.end .ul_li .ul_ul li{
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.end .ul_li .ul_ul li:first-child{
+    color:#333;
+    margin-top: 0;
+    font-size: 20px;
+}
+.end .ul_li .ul_ul a:hover{
+    text-decoration: underline;
+    color: #757575;
+}
+.end .ul_li .ul_ul li a{
+    text-decoration: none;
+    color:#333;
+}
+
+/* 第三部分右侧两个二维码样式 */
+.end .weixin{
+    float: left;
+    margin-left: 45px;
+}
+.end .weixin img{
+    width: 100px;
+    height: 100px;
+}
+.end .weixin span{
+    display: block;
+    text-align: center;
+   margin-top: 2px;
+   font-size: 12px;
+   color: #757575;
+}
+
+
+
+/* 底部声明样式 */
+.statement{
+    width: 100%;
+    height: 90px;
+    background-color: #f7f1eb;
+    margin-bottom: -5px;
+}
+.statement .statement_inner{
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+.statement .statement_inner .left{
+    width: 475px;
+}
+.statement .statement_inner .left a{
+    text-decoration: none;
+} 
+.statement .statement_inner .left span{
+    color: #757575;
+    font-size: 12px
+}
+.statement .statement_inner .left img{
+    display: block;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.statement .statement_inner .left p{
+    color: #757575;
+    font-size: 12px;
+    margin-top: -18px;
+    margin-left: 109px;
+    font-weight: 600;
+}
+.statement .statement_inner .right{
+   
+    margin-top: -50px;
+    margin-left: 750px;
+}
+.statement .statement_inner .right a img{
+    width: 90px;
+    height: 34px;
+    margin-left: 5px;
+}
+.statement .statement_inner .right .img1{
+    margin-left: 45px;
+}

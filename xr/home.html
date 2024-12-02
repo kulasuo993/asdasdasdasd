@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>味多美官网_蛋糕订购，100%使用天然奶油</title>
+    <link rel="stylesheet" href="./css/a.css">
+    <meta  http-equiv="Content-Security-Policy" content="default-src 'none'; font-src 'self' data: https://ericwei.inscode.cc; img-src 'self' data:; script-src 'self' 'unsafe-eval' https://ericwei.inscode.cc;">
+
+    <style>
+        /* 头部最大的容器（盒子box） */
+.top{
+    width: 100%;
+    height: 96px;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    border-bottom: 1px solid #bcbcbc;
+    top: 0;
+}
+
+/* 头部居中盒子 */
+.top .top_box{
+    width: 1170px;
+    height: 91px;
+    margin: 0 auto;
+    padding: 5px 5px 0 5px;
+}
+/* 头部logo样式 */
+.top .logo{
+    width: 154px;
+    margin-top: 10px;
+}
+
+/* 头部北京定位样式 */
+.top .seat{
+    background: url(../img/seat.png) no-repeat 0 0; 
+    float: left;
+    line-height: 12px;
+    margin-top: -20px;
+    margin-left: 175px;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+/* 头部导航栏样式 */
+.top .navigation{
+    float: left;
+    width: 750px;
+    height: 17px;
+    margin-top: -35px;
+    margin-left: 200px;
+}
+.top .navigation ul li{
+    float: left;
+    list-style: none;
+   
+    height: 17px;
+    border-right: 1px solid #333;
+    line-height: 14px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.top .navigation ul li a{
+    color: #333;
+    text-decoration: none;
+}
+.top .navigation ul .li2{
+    border-right: 0px;
+}
+.top .navigation ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/* 头部二维码样式 */
+.top .top_right{
+    display: block;
+    width: 200px;
+    /* height: 200px; */
+    position: relative;
+    margin-left: 850px;
+    margin-top: -84px;
+}
+.top .top_right p{
+    margin-top: -40px;
+    margin-left: 20px;
+    color: #bcbcbc;
+}
+.top .top_right img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.top .top_right img:hover{
+    width: 300px;
+    height: 300px;
+}
+
+/* 头部登录注册按钮样式 */
+.top .login{
+    width: 80px;
+    margin-left: 1070px;
+    margin-top: -60px;
+}
+
+.top .login a{
+    font-size: 13px;
+    color: red;
+    text-decoration: none;
+}
+.top .login a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+/* 头部购物车样式 */
+.top .car{
+    width: 50px;
+    height: 50px;
+    margin-left: 1074px;
+    margin-top: 2px;
+}
+.top .car a{
+    text-decoration: none;
+}
+.top .car a:hover{
+    text-decoration:underline;
+    color: red;
+}
+.top .car span{
+    display: block;
+    margin-top: -31px;
+    margin-left: 32px;
+    font-size: 12px;
+    color: red;
+}
+
+/* 头部导航栏固定多余部分填充样式 */
+.top_blow {
+    height: 88px;
+}
+
+
+.center_box{
+    width: 100%;
+}
+
+/* 第二大块图片部分样式 */
+.center{
+    width: 1170px;
+    margin: 0 auto;
+   
+}
+/* .center p{
+    font-size: 20px;
+    text-align: center;
+}
+.center p:before{
+    position: absolute;
+    top: 50%; 
+    background: #ddd; 
+    content: "";
+    height: 10px;
+    width: 5px;
+    background-color: red   ;
+} */
+.order {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.order .line {
+    display: inline-block;
+    width: 250px;
+    border-top: 2px solid #ccc ;
+}
+.order .txt {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    vertical-align: -4px;
+}
+.center img{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.center .one{
+    width: 1170px;
+    height: 500px;
+}
+.center .one:hover{
+    opacity: 1;
+}
+
+.center .two{
+    width: 510px;
+    height: 545px;
+    float: left;
+}
+.center .two:hover{
+    opacity: 1;
+}
+.center .three{
+    width: 650px;
+    height: 230px;
+    margin-left: 10px;
+    float: left;
+}
+.center .three:hover{
+    opacity: 1;
+}
+.center .four{
+    width: 322px;
+    height: 310px;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+}
+.center .four:hover{
+    opacity: 1;
+}
+.center .five{
+    width: 322px;
+    height: 310px;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+.center .five:hover{
+    opacity: 1;
+}
+
+
+.culture{
+    width: 100%;
+    background-color: #f7f1eb;
+}
+.culture .box{
+    margin: 0 auto;
+    width: 1170px;
+}
+.culture .box .about_text{
+    text-align: center;
+    font-size: smaller;
+    color: #868686;
+    padding-bottom: 20px;
+}
+.culture .box .about_text p{
+    margin-top: -7px;
+}
+
+
+
+.about{
+    width: 100%;
+    border-bottom: 1px solid #bcbcbc;
+    margin-top: -4px;
+}
+.about .box{
+    width: 1170px;
+    height: 510px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.about .box .word{
+    margin-left: 30px;
+    color: #868686;
+    line-height: 25px;
+}
+.about .box img{
+    display: block;
+    margin: 0 auto;
+}
+
+/* 第三大块帮助中心部分样式 */
+/* 大盒子样式 */
+.last{
+    width: 100%;
+    background-color: #f7f1eb;
+    border-bottom: 1px solid #bcbcbc;
+    margin-top: -4px;
+}
+/* 居中盒子样式 */
+.end{
+    width: 1170px;
+    height: 206px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+/* 居中盒子4个ulli样式 */
+.end .ul_li{
+    width: 220px;
+    height: 120px;
+    float: left;
+    border-right: 1px solid #bcbcbc;
+    list-style: none;
+}
+.end .ul{
+    margin-left: -55px;
+}
+.end .ul_li .ul_ul{
+    margin-left: 28px;
+}
+.end .ul_li .ul_ul li{
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.end .ul_li .ul_ul li:first-child{
+    color:#333;
+    margin-top: 0;
+    font-size: 20px;
+}
+.end .ul_li .ul_ul a:hover{
+    text-decoration: underline;
+    color: #757575;
+}
+.end .ul_li .ul_ul li a{
+    text-decoration: none;
+    color:#333;
+}
+
+/* 第三部分右侧两个二维码样式 */
+.end .weixin{
+    float: left;
+    margin-left: 45px;
+}
+.end .weixin img{
+    width: 100px;
+    height: 100px;
+}
+.end .weixin span{
+    display: block;
+    text-align: center;
+   margin-top: 2px;
+   font-size: 12px;
+   color: #757575;
+}
+
+
+
+/* 底部声明样式 */
+.statement{
+    width: 100%;
+    height: 90px;
+    background-color: #f7f1eb;
+    margin-bottom: -5px;
+}
+.statement .statement_inner{
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+.statement .statement_inner .left{
+    width: 475px;
+}
+.statement .statement_inner .left a{
+    text-decoration: none;
+} 
+.statement .statement_inner .left span{
+    color: #757575;
+    font-size: 12px
+}
+.statement .statement_inner .left img{
+    display: block;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.statement .statement_inner .left p{
+    color: #757575;
+    font-size: 12px;
+    margin-top: -18px;
+    margin-left: 109px;
+    font-weight: 600;
+}
+.statement .statement_inner .right{
+   
+    margin-top: -50px;
+    margin-left: 750px;
+}
+.statement .statement_inner .right a img{
+    width: 90px;
+    height: 34px;
+    margin-left: 5px;
+}
+.statement .statement_inner .right .img1{
+    margin-left: 45px;
+}
+    </style>
+</head>
+<body>
+   
+    <!-- 头部导航栏 -->
+        <div class="top">
+            <div class="top_box">
+                <!-- logo-->
+                <div class="logo">
+                    <a href="">
+                        <img src="/img/logo_bj.png" alt="">
+                    </a>
+                </div>
+                
+                <!-- 北京定位 -->
+                <div class="seat">
+                    <div>北京</div>
+                </div>
+
+                <!-- 导航栏 -->
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            <a href="">首页</a>
+                        </li>
+                        <li class="navlicake">
+                            <a href="">蛋糕</a>
+                        </li>
+                        <li>
+                            <a href="">全国配送</a>
+                        </li>
+                        <li>
+                            <a href="">同城配送范围</a>
+                        </li>
+                        <li>
+                            <a href="">会员中心</a>
+                        </li>
+                        <li>
+                            <a href="">积分换礼</a>
+                        </li>
+                        <li class="li2">
+                            <a href="">企业服务</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 二维码 -->
+                <div class="top_right">
+                    <p style="float: left;">扫码下单</p>
+                    <img src="./img/code.jpg" alt="" class="code">
+                </div>
+
+                <!-- 登录注册按钮 -->
+                <div class="login">
+                    <a href="">登录</a>
+                    <a href="">注册</a>
+                </div>
+
+                <!-- 购物车车按钮 -->
+                <div class="car">
+                    <a href="">
+                        <img src="./img/car.jpg" alt="">
+                        <span>0</span>
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- 导航栏固定多余的部分填充 -->
+        <div class="top_blow">
+
+        </div>
+
+
+        <div class="center_box">
+            <div class="center">
+                <div class="order">
+                    <span class="line"></span>
+                    <span class="txt">产品清单</span>
+                    <span class="line"></span>
+                </div>
+                <!-- <p></p> -->
+                <img src="./img/one.jpg" alt="" class="one">
+                <img src="./img/two.jpg" alt="" class="two">
+                <img src="./img/three.png" alt="" class="three">
+                <img src="./img/four.png" alt="" class="four">
+                <img src="./img/five.jpg" alt="" class="five">
+            </div>
+        </div>
+        <!-- 图片部分 -->
+      
+        <div class="culture">
+            <div class="box">
+                <div class="order">
+                    <span class="line"></span>
+                    <span class="txt">企业文化</span>
+                    <span class="line"></span>
+                </div>
+                <div class="about_text">
+                    <p><span>s 超级符号：超级大麦穗</span></p>
+                    <p><span>s 超级口号：好面包 味多美</span></p>
+                    <p><span>s 使命：为消费者提供高质平价的现烤面包、现做蛋糕，让每一个奋斗者在味多美实现自己的梦想</span></p>
+                    <p><span>s 愿景：在中国开10000家连锁店</span></p>
+                    <p><span style="color: red;">s 企业精神： 奋斗精神、工匠精神、创新精神</span></p>
+                    <p><span>s 价值观：认真、诚信、勤奋、完美</span></p>
+                    <p><span>s 员工目标：做个奋斗者，成为合伙人。</span></p>
+                    <p><span>s 最重要的部门：门店、电商</span></p>
+                    <p><span>s 经营中心：<span style="color: red;">以顾客为中心。</span> </span></p>
+                    <p><span>s 赛场文化：公平公正，双手改变命运。</span></p>
+                    <p><span>s 管理工具：人定岗、物定位、做流程、做标准、做记录、做培训、做考核、持续改善</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="box">
+                <div class="order">
+                    <span class="line"></span>
+                    <span class="txt">关于我们</span>
+                    <span class="line"></span>
+                </div>
+                <span class="word">
+                    味多美创立于1996年，是国内著名烘焙连锁食品品牌，主要经营中高端蛋糕、面包、咖啡、中西式点心、月饼、粽子等产品。数十年来，我们围绕客户的需求持续创新，与合作伙伴开放合作，在企业员工福利关怀、聚会庆典、商务活动定制、客户关系维护等方面为众多知名企业客户提供了优质的外包服务解决方案。
+                </span>
+                <br>
+                <span class="word">
+                    作为中国烘焙行业引领者，长期以来，味多美坚持以优质的服务、健康美味的产品，努力给消费者提供高品质的生活享受。与此同时，我们力争成为广大企业客户的第一选择和最佳合作伙伴，成为深受消费者钟爱的品牌。
+                </span>
+                <img src="./img/about.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!-- 帮助中心部分 -->
+        <div class="last">
+            <div class="end">
+                <!-- 左侧四块，用的4个li -->
+                <ul class="ul">
+                  <li class="ul_li">
+                      <ul class="ul_ul">
+                          <li class="aaa"><a href="">帮助中心</a></li>
+                          <li><a href="">购物帮助</a></li>
+                          <li><a href="">支付方式</a></li>
+                          <li><a href="">北京配送规则</a></li>
+                      </ul>
+                  </li>
+      
+                  <li class="ul_li">
+                      <ul class="ul_ul">
+                          <li><a href="">门店服务</a></li>
+                          <li><a href="">门店查询</a></li>
+                          <li><a href="">购卡须知</a></li>
+                          <li><a href="">提货卡/积分卡查询</a></li>
+                      </ul>
+                  </li>
+      
+                  <li class="ul_li">
+                      <ul class="ul_ul">
+                          <li><a href="">关于我们</a></li>
+                          <li><a href="">了解味多美</a></li>
+                          <li><a href="">味多美新闻</a></li>
+                          <li><a href="">加入味多美</a></li>
+                      </ul>
+                  </li>
+      
+                  <li class="ul_li">
+                      <ul class="ul_ul">
+                          <li><a href="">关注我们</a></li>
+                          <li><a href="">官方微博</a></li>
+                      </ul>
+                  </li>
+      
+                </ul>
+
+                <!-- 右侧两个二维码 -->
+                <div class="weixin">
+                    <img src="./img/code.jpg" alt="">
+                    <span>
+                        关注味多美微信
+                        <br>
+                        了解最新会员活动
+                    </span>
+                </div>
+                <div class="weixin">
+                    <img src="./img/code.jpg" alt="">
+                    <span>
+                        承接企事业团购
+                        <br>
+                        扫码订购更快捷
+                    </span>
+                </div>
+              </div>
+        </div>
+        
+        <!-- 底部声明 -->
+        <div class="statement">
+            <div class="statement_inner">
+                <div class="left">
+                    <span>@2005-2022味多美版权所有，并保留所有权利。ICP备案证书号:京ICP备14006433号-1</span>
+                    <a href="">
+                        <img src="./img/ghs.png" alt="">
+                        <p>京公网安备 11010202007671号</p>
+                    </a>
+                </div>
+                <div class="right">
+                    <a href=""><img src="./img/logo1.png" alt="" class="img1"></a>
+                    <a href=""><img src="./img/logo2.png" alt=""></a>
+                    <a href=""><img src="./img/logo3.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+   
+</body>
+</html>
